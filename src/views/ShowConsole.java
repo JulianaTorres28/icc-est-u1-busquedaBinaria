@@ -14,10 +14,11 @@ public class ShowConsole {
 
     public void showArray(Persona[] personas){
         System.out.print(" Arreglo ordenado: ");
+        System.out.print("[");
         for (Persona persona : personas) {
-            System.out.print(persona.getNombre() + " ");
+            System.out.print(persona.getNombre() + ", " );
         }
-        System.out.println();
+        System.out.println("]");
     }
 
     public void showResult(Integer resultado){
